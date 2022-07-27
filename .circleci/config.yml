@@ -265,10 +265,7 @@ jobs:
       - install_nodejs
       - install_awscli
       - install_ansible
-      - run:
-          name: Install dependencies
-          command: |
-            # your code here
+
       - run:
           name: Get backend url
           command: |
