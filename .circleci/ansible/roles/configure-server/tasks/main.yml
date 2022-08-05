@@ -8,7 +8,7 @@
   become: yes
   apt:
     autoremove: yes
-- name: install dependencies  # sudo apt install nodejs npm
+- name: install dependencies   # sudo apt install nodejs npm
   become: yes
   apt:
     name: ['nodejs', 'npm']
