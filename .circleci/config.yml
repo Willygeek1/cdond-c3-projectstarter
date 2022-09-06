@@ -242,8 +242,9 @@ jobs:
           name: Run migrations
           command: |
             cd backend
-            npm install
+            sudo npm install -g npm
             npm run migrations > migrations_dump.txt
+            cat migrations_dump.txt
       - run:
           name: Send migration results to kvdb.io
           command: |
