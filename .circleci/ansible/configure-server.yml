@@ -39,4 +39,4 @@
   roles:
     # Your code herec
     - configure-server
-    # - configure-prometheus-node-exporter
+    - configure-prometheus-node-exporter
