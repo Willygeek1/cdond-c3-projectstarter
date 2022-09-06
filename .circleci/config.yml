@@ -239,6 +239,15 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install dependencies
+          become: yes
+          command: |
+            sudo apt-get update
+            sudo apt install tar gzip curl
+      - install_awscli
+      - restore_cache: 
+          keys: [backend-build]
+      - run:
           name: Run migrations
           command: |
             cd backend
