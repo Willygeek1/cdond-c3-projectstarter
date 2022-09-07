@@ -1,0 +1,2 @@
+github-url=https://github.com/willygeek1/cdond-c3-projectstarter-[URL01]
+S3_URL-http://udapeople-d5cf452.s3-website-us-east-1.amazonaws.com
